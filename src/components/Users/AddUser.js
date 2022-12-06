@@ -20,7 +20,8 @@ const AddUser = (props) => {
       return;
     }
 
-    console.log(enteredUsername, enteredAge);
+    // 상위 컴포넌트로 state 끌어올리기
+    props.onAddUser(enteredUsername, enteredAge);
     setEnteredUsername("");
     setEnteredAge("");
   };
