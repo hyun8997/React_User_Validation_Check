@@ -17,12 +17,12 @@ function App() {
   };
 
   return (
-    <div>
+    <>
       {/* state를 끌어올릴 이벤트 생성 */}
       <AddUser onAddUser={addUserHandler} />
       {/* 유저 추가된 리스트 전달 */}
       <UsersList users={usersList} />
-    </div>
+    </>
   );
 }
 
